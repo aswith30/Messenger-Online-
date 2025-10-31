@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quora-Lite</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Quora-Lite</h1>
+      <div id="user-area"></div>
+    </header>
+
+    <main>
+      <section id="auth-section" class="card">
+        <div id="forms">
+          <form id="login-form" class="auth-form">
+            <h3>Login</h3>
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="password" type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+
+          <form id="register-form" class="auth-form">
+            <h3>Register</h3>
+            <input name="name" placeholder="Full name" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="password" type="password" placeholder="Password" required />
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="create-post" class="card hidden">
+        <h3>Create Post</h3>
+        <form id="post-form">
+          <textarea id="post-text" placeholder="Share something..." maxlength="2000" required></textarea>
+          <button type="submit">Post</button>
+        </form>
+      </section>
+
+      <section id="feed" class="card">
+        <h3>Feed</h3>
+        <ul id="posts"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>
